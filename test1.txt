@@ -1,0 +1,6 @@
+First_name ( STRING ) Last_name ( STRING ) Age ( INT ) Gender ( ENUM M F ) ;
+First_name Last_name Age Gender ;
+Kevin Ho NULL M ;
+Ken Ho 20 F ;
+Lok Ho 13 NULL ;
+Kelly wong 65 F ;

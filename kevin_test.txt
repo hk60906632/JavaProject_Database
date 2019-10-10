@@ -1,0 +1,8 @@
+First_name ( STRING ) Last_name ( STRING ) Going ( ENUM Y N Nah ) Age ( INT ) Gender ( ENUM M F )  Partner ( FOREIGN_KEY Test1 ) ;
+First_name Last_name Going Age Gender Partner ;
+Kevin Ho Y 33 M 1 ;
+Ken Ho N 20 F 0 ;
+Lok Ho Nah 13 NULL 3.3 ;
+Kelly wong Y 65 F 4 ;
+Kennith Choi Y 55 M 10 ;
+Hello World N 200 F 6 ;

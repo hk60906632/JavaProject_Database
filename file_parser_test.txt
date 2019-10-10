@@ -1,0 +1,33 @@
+ADD_TABLE Test1 first_name ( STRING ) last_name ( STRING ) age ( INT ) ;
+ADD_RECORD_TO_TABLE kevin ho 22 ;
+ADD_RECORD_TO_TABLE john cena 55 ;
+ADD_RECORD_TO_TABLE Chris cena 35 ;
+AUTO_GEN_KEY ;
+PRINT_TABLE_INFO ;
+PRINT_TABLE ;
+ADD_COLUMN 3 Country jp uk hk  [ Country ( STRING ) ] ;
+PRINT_TABLE ;
+PRINT_TABLE_INFO ;
+
+ADD_TABLE_BY_FILE Test2 /home/kevin/Documents/kevin_test.txt ;
+SELECT_TABLE Test2 ;
+AUTO_GEN_KEY ;
+SHOW_DATABASE ;
+AUTO_GEN_KEY ;
+ADD_COLUMN 6 Country jp uk hk fr jp usa [ Country ( STRING ) ] ;
+PRINT_TABLE_INFO ;
+PRINT_TABLE ;
+ADD_RECORD_TO_TABLE Hanabi Isaki Y 18 F jp 9 ;
+ADD_RECORD_TO_TABLE Suzuki Honda Y 18 F jp 1 ;
+PRINT_TABLE ;
+
+ADD_TABLE_BY_FILE Test3 /home/kevin/Documents/key_testing.txt ;
+SHOW_DATABASE ;
+SELECT_TABLE Test3 ;
+PRINT_TABLE_INFO ;
+PRINT_TABLE ;
+ADD_RECORD_TO_TABLE Jimmy Choo 90 M ;
+AUTO_GEN_KEY ;
+ADD_RECORD_TO_TABLE Jacky Chan 68 M ;
+UPDATE_CELL 1 2 Kidman ;
+PRINT_TABLE ;
